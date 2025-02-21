@@ -4,7 +4,7 @@ import AuthLayout from "../layouts/AuthLayout"
 
 const RegisterForm = () => {
   return (
-    <AuthLayout>
+    <AuthLayout title="Daftar" subTitle="Selamat Datang!" >
         <CompleteInput 
             id="username" 
             type="text" 
@@ -20,15 +20,14 @@ const RegisterForm = () => {
             labelText="Kata Sandi" 
         />
         <CompleteInput 
-            id="password" 
+            id="passwordConfirm" 
             type="password" 
             placeholder="Masukkan kata sandi" 
-            htmlFor="password" 
-            labelText="Kata Sandi" 
+            htmlFor="passwordConfirm" 
+            labelText="Konfirmasi Kata Sandi" 
         >
             <div className="w-full flex justify-between font-lato mt-1.5">
-                <p className="text-light-secondary text-base tracking-[.2px] cursor-default">Belum punya akun? <a className="text-white text-sm cursor-pointer">Daftar</a></p>
-                <p className="text-white text-base cursor-pointer"><a to="">Lupa kata sandi?</a></p>
+                <p className="text-light-secondary text-base tracking-[.2px] cursor-default">Sudah punya akun? <a className="text-white text-sm cursor-pointer">Masuk</a></p>
             </div>
         </CompleteInput>
         <CompleteButtonForm />

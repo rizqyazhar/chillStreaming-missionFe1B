@@ -4,7 +4,7 @@ import AuthLayout from "../layouts/AuthLayout"
 
 const LoginForm = () => {
   return (
-    <AuthLayout>
+    <AuthLayout title="Masuk" subTitle="Selamat Datang Kembali!">
         <CompleteInput 
             id="username" 
             type="text" 

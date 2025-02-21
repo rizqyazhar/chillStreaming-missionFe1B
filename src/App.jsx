@@ -1,10 +1,10 @@
-// import LoginForm from "./components/fragments/LoginForm"
+import LoginForm from "./components/fragments/LoginForm"
 import RegisterForm from "./components/fragments/RegisterForm"
 
 const App = () => {
   return (
     <>
-      {/* <LoginForm /> */}
+      <LoginForm />
       <RegisterForm />
     </>
   )

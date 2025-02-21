@@ -1,4 +1,4 @@
-const AuthLayout = ({ children }) => {
+const AuthLayout = ({ title, subTitle, children }) => {
   return (
     <div className="relative min-h-screen bg-[url('/img/bg-img/bg-login.jpg')] bg-cover bg-top flex justify-center items-center">
         <div className="absolute inset-0 bg-black/30"></div>
@@ -9,8 +9,8 @@ const AuthLayout = ({ children }) => {
                 </div>
 
                 <div className="flex flex-col justify-center items-center font-lato">
-                    <h1 className="text-3xl font-bold text-white">Masuk</h1>
-                    <p className="text-lg font-normal text-white tracking[.2px]">Selamat datang kembali!</p>
+                    <h1 className="text-3xl font-bold text-white">{ title }</h1>
+                    <p className="text-lg font-normal text-white tracking[.2px]">{ subTitle }</p>
                 </div>
                 <form className="w-full flex flex-col justify-center items-center gap-[37px]">
                     {children}
