@@ -12,12 +12,12 @@
     --color-primary-300: rgba(15, 30, 147, 1);
     --color-primary-400: rgba(9, 20, 122, 1);
 
-    --color-textDark-primary: rgba(58, 53, 65, 0.87);
-    --color-textDark-secondary: rgba(58, 53, 65, 0.68);
-    --color-textDark-disabled: rgba(58, 53, 65, 0.38);
-    --color-textLight-primary: rgba(231, 227, 252, 0.87);
-    --color-textLight-secondary: rgba(231, 227, 252, 0.68);
-    --color-textLight-disabled: rgba(231, 227, 252, 0.38);
+    --color-dark-primary: rgba(58, 53, 65, 0.87);
+    --color-dark-secondary: rgba(58, 53, 65, 0.68);
+    --color-dark-disabled: rgba(58, 53, 65, 0.38);
+    --color-light-primary: rgba(231, 227, 252, 0.87);
+    --color-light-secondary: rgba(231, 227, 252, 0.68);
+    --color-light-disabled: rgba(231, 227, 252, 0.38);
     
     --color-paperBackground: rgba(34, 40, 42, 1);
     --color-bodyBackground: rgba(47, 51, 52, 1);
@@ -59,3 +59,4 @@
     --color-grey-100: rgba(245, 245, 245, 1);
     --color-grey-50: rgba(250, 250, 250, 1);
 }
+
