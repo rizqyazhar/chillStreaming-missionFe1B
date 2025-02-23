@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-pageHeaderBackground h-[284px] px-20 py-[60px] font-lato text-white grid grid-cols-3">
+    <footer className="min-w-screen border-t border-bodyBackground bg-pageHeaderBackground h-[284px] px-20 py-[60px] font-lato text-white grid grid-cols-3">
         <div className="flex flex-col gap-[26px] justify-center">
             <div>
                 <img src="/logo/chill-logo.svg"/>

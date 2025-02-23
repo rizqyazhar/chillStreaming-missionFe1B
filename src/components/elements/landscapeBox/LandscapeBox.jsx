@@ -1,7 +1,7 @@
-const LandscapeBox = () => {
+const LandscapeBox = ({ src }) => {
     return (
-      <div className="w-[302px] h-[162px]">
-          <img src="/public/img/landscape/img-1.png" className="w-full h-full object-cover object-center rounded-lg" />
+      <div className="w-[302px] h-[162px] cursor-pointer">
+          <img src={src} className="w-full h-full object-cover object-center rounded-lg" />
       </div>
     )
   }
