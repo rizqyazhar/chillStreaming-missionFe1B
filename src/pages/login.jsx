@@ -1,6 +1,6 @@
-import LoginForm from "./components/fragments/LoginForm"
+import LoginForm from "../components/fragments/LoginForm"
 
-const login = () => {
+const Login = () => {
   return (
     <>
         <LoginForm />
@@ -8,4 +8,4 @@ const login = () => {
   )
 }
 
-export default login
+export default Login
