@@ -1,9 +1,10 @@
-import Header from "./components/fragments/Header"
+import HomeLayout from "./components/layouts/HomeLayout"
+
 
 const App = () => {
   return (
     <>
-        <Header />
+       <HomeLayout /> 
     </>
   )
 }

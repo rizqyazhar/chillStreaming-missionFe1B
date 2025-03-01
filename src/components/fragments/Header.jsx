@@ -3,7 +3,7 @@ import { IoVolumeMuteSharp } from "react-icons/io5";
 
 const Header = () => {
   return (
-    <header className="relative min-w-screen flex justify-center items-end">
+    <header className="relative max-w-screen flex justify-center items-end">
         <div className="w-full">
             <img src="/img/landscape/img-38.svg" className="w-full object-cover"/> 
         </div>

@@ -1,7 +1,7 @@
-import Navbar from "./components/fragments/Navbar"
-import Header from "./components/fragments/Header"
-import Main from "./components/fragments/Main"
-import Footer from "./components/fragments/Footer"
+import Navbar from "../fragments/Navbar"
+import Header from "../fragments/Header"
+import Main from "../fragments/Main"
+import Footer from "../fragments/Footer"
 
 const HomeLayout = () => {
   return (

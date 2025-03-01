@@ -3,7 +3,7 @@ import LandscapeBoxs from "./LandscapeBoxs"
 
 const Main = () => {
   return (
-    <main className="min-w-screen bg-pageHeaderBackground pb-20">
+    <main className="max-w-screen bg-pageHeaderBackground pb-20">
         <LandscapeBoxs />
         <PotraitBoxs title="Top Rating Film dan Series Hari ini" />
         <PotraitBoxs title="Film Trending" />

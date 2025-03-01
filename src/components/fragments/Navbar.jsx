@@ -3,7 +3,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 const Navbar = () => {
   return (
     <>
-        <nav className="min-w-screen px-20 py-6 bg-pageHeaderBackground flex justify-between">
+        <nav className="max-w-screen px-20 py-6 bg-pageHeaderBackground flex justify-between">
             <div className="flex items-center gap-20">
               <div>
                 <img src="/public/logo/chill-logo.svg" className="w-[103.55px]" />
