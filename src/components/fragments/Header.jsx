@@ -1,13 +1,14 @@
 import { IoMdInformationCircleOutline } from "react-icons/io";
 import { IoVolumeMuteSharp } from "react-icons/io5";
 
-const Header = () => {
+const Header = ({ children }) => {
   return (
     <header className="relative max-w-screen flex justify-center items-end">
         <div className="w-full">
             <img src="/img/landscape/img-38.svg" className="w-full object-cover"/> 
         </div>
         <div className="absolute w-7xl mb-20 flex flex-col gap-10 font-lato text-white">
+          {children}
           <div className="w-[668px] h-[148px] flex flex-col justify-between">
             <h3 className="font-bold text-5xl">Duty After School</h3>
             <p className="text-lg">Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan, Departemen Pertahanan mulai merekrut lebih banyak tentara, termasuk siswa sekolah menengah. Mereka pun segera menjadi pejuang garis depan dalam perang.</p>
