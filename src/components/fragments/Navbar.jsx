@@ -23,7 +23,7 @@ const Navbar = ({ genreTab }) => {
               </div>
             </div>
             <div className="flex gap-1 md:gap-2 items-center">
-              <img src="/public/img/icon/avatar.svg" className="w-5 md:w-10"/>
+              <img src="/img/icon/avatar.svg" className="w-5 md:w-10"/>
               <a href="">
                   <MdKeyboardArrowDown className="text-base md:text-3xl text-white"/> 
               </a>

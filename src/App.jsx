@@ -7,7 +7,7 @@ import Films from "./pages/Films"
 import Home from "./pages/Home"
 
 const router = createBrowserRouter([
-  {path: "/login", element: <Login/>},
+  {path: "/", element: <Login/>},
   {path: "/register", element: <Register/>},
   {path: "/home", element: <Home/>},
   {path: "/mylist", element: <MyList/>},
