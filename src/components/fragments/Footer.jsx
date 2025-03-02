@@ -1,16 +1,23 @@
+import { MdKeyboardArrowRight } from "react-icons/md"
+
 const Footer = () => {
   return (
-    <footer className="max-w-screen border-t border-bodyBackground bg-pageHeaderBackground h-[284px] px-20 py-[60px] font-lato text-white grid grid-cols-3">
-        <div className="flex flex-col gap-[26px] justify-center">
+    <footer className="max-w-screen border-t border-bodyBackground bg-pageHeaderBackground h-48 md:h-[284px] p-5 md:px-20 md:py-[60px] font-lato text-white flex flex-col gap-10 md:grid md:grid-cols-3">
+        <div className="flex flex-col gap-4 md:gap-[26px] justify-center">
             <div>
-                <img src="/logo/chill-logo.svg"/>
+                <img src="/logo/chill-logo.svg" className="w-[84px] md:w-[163px]"/>
             </div>
-            <p className="text-poppins">@2023 Chill All Rights Reserved.</p>
+            <p className="text-poppins text-xs md:text-base">@2023 Chill All Rights Reserved.</p>
         </div>
-        <div className="col-start-2 col-end-4 grid grid-cols-4">
+        <div className="flex flex-col gap-2 md:col-start-2 md:col-end-4 md:grid md:grid-cols-4">
             <div className="col-start-1 col-end-4 flex flex-col gap-[15px]">
-                <h4 className="font-bold tracking-[.2px] cursor-default">Genre</h4>
-                <div className="grid grid-cols-[repeat(4,max-content)] gap-x-7 gap-y-2.5 tracking-[.2px]">
+                <div className="flex justify-between items-center">
+                    <h4 className="font-bold tracking-[.2px] cursor-default">Genre</h4>
+                    <div className="md:hidden">
+                        <MdKeyboardArrowRight className="text-2xl"/>
+                    </div>
+                </div>
+                <div className="hidden md:grid md:grid-cols-[repeat(4,max-content)] md:gap-x-7 md:gap-y-2.5 md:tracking-[.2px]">
                     <a href="">Aksi</a>
                     <a href="">Drama</a>
                     <a href="">Komedi</a>
@@ -28,8 +35,13 @@ const Footer = () => {
                 </div>
             </div>
             <div className="col-start-4 col-end-5 flex flex-col gap-[15px]">
-                <h4 className="font-bold tracking-[.2px] cursor-default">Bantuan</h4>
-                <div className="grid grid-rows-4 gap-2.5 font-medium">
+                <div className="flex justify-between items-center">
+                    <h4 className="font-bold tracking-[.2px] cursor-default">Bantuan</h4>
+                    <div className="md:hidden">
+                        <MdKeyboardArrowRight  className="text-2xl"/>
+                    </div>
+                </div>
+                <div className="hidden md:grid md:grid-rows-4 md:gap-2.5 md:font-medium">
                     <a href="">FAQ</a>
                     <a href="">Kontak Kami</a>
                     <a href="">Privasi</a>
