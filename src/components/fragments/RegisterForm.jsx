@@ -21,7 +21,7 @@ const RegisterForm = () => {
             labelText="Kata Sandi" 
         >
             <BiSolidHide 
-                className="absolute top-[50px] right-5 text-2xl text-light-disabled cursor-pointer" 
+                className="absolute top-7 md:top-[50px] right-3 md:right-5 text-xs md:text-2xl text-light-disabled cursor-pointer" 
             />
         </CompleteInput>
         <CompleteInput 
@@ -32,10 +32,10 @@ const RegisterForm = () => {
             labelText="Konfirmasi Kata Sandi" 
         >
             <BiSolidHide 
-                className="absolute top-[50px] right-5 text-2xl text-light-disabled cursor-pointer" 
+                className="absolute top-7 md:top-[50px] right-3 md:right-5 text-xs md:text-2xl text-light-disabled cursor-pointer" 
             />
             <div className="w-full flex justify-between font-lato mt-1.5">
-                <p className="text-light-secondary text-base tracking-[.2px] cursor-default">Sudah punya akun? <a className="text-white text-sm cursor-pointer">Masuk</a></p>
+                <p className="text-light-secondary text-[10px] md:text-base tracking-[.2px] cursor-default">Sudah punya akun? <a className="text-white text-[10px] md:text-sm cursor-pointer">Masuk</a></p>
             </div>
         </CompleteInput>
         <CompleteButtonForm pathLink="/home" />
