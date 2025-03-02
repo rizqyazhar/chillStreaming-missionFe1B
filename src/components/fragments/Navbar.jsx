@@ -1,7 +1,11 @@
 import { MdKeyboardArrowDown } from "react-icons/md"
 import { Link } from "react-router-dom"
+import DropdownProfile from "./DropdownProfile"
+import { useState } from "react"
 
 const Navbar = ({ genreTab }) => {
+  const [showDropdown, setShowDropdown] = useState(false);
+
   return (
     <>
         <nav className="max-w-screen px-5 py-1.5 md:px-10 md:py-6 bg-pageHeaderBackground flex justify-between">
@@ -22,11 +26,12 @@ const Navbar = ({ genreTab }) => {
                 { genreTab }
               </div>
             </div>
-            <div className="flex gap-1 md:gap-2 items-center">
+            <div className="relative flex gap-1 md:gap-2 items-center">
               <img src="/img/icon/avatar.svg" className="w-5 md:w-10"/>
-              <a href="">
-                  <MdKeyboardArrowDown className="text-base md:text-3xl text-white"/> 
-              </a>
+              <MdKeyboardArrowDown className="text-base md:text-3xl text-white cursor-pointer" onClick={ (e) => { 
+                e.preventDefault();
+                setShowDropdown(!showDropdown) } }/> 
+              { showDropdown && < DropdownProfile /> }
             </div>
         </nav>
     </>
