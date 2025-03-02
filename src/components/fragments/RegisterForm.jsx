@@ -2,6 +2,7 @@ import CompleteInput from "../elements/input/CompleteInput"
 import CompleteButtonForm from "../elements/button/CompleteButtonForm"
 import AuthLayout from "../layouts/AuthLayout"
 import { BiSolidHide } from "react-icons/bi"
+import { Link } from "react-router-dom"
 
 const RegisterForm = () => {
   return (
@@ -35,7 +36,7 @@ const RegisterForm = () => {
                 className="absolute top-7 md:top-[50px] right-3 md:right-5 text-xs md:text-2xl text-light-disabled cursor-pointer" 
             />
             <div className="w-full flex justify-between font-lato mt-1.5">
-                <p className="text-light-secondary text-[10px] md:text-base tracking-[.2px] cursor-default">Sudah punya akun? <a className="text-white text-[10px] md:text-sm cursor-pointer">Masuk</a></p>
+                <p className="text-light-secondary text-[10px] md:text-base tracking-[.2px] cursor-default">Sudah punya akun? <Link to="/login" className="text-white text-[10px] md:text-sm cursor-pointer">Masuk</Link></p>
             </div>
         </CompleteInput>
         <CompleteButtonForm pathLink="/home" />
