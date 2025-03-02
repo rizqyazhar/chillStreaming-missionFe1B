@@ -1,14 +1,11 @@
 import Navbar from "../fragments/Navbar"
-import Header from "../fragments/Header"
-import Main from "../fragments/Main"
 import Footer from "../fragments/Footer"
 
-const HomeLayout = () => {
+const HomeLayout = ({ children }) => {
   return (
     <>
         <Navbar />
-        <Header />
-        <Main />
+          {children}
         <Footer />
     </>
   )

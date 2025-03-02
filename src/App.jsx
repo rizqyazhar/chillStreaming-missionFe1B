@@ -1,24 +1,23 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import HomeLayout from "./components/layouts/HomeLayout"
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Login from "./pages/Login"
 import Register from "./pages/register"
 import MyList from "./pages/MyList"
 import Series from "./pages/Series"
 import Films from "./pages/Films"
+import Home from "./pages/Home"
 
+const router = createBrowserRouter([
+  {path: "/login", element: <Login/>},
+  {path: "/register", element: <Register/>},
+  {path: "/home", element: <Home/>},
+  {path: "/mylist", element: <MyList/>},
+  {path: "/series", element: <Series/>},
+  {path: "/films", element: <Films/>}
+])
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/login" element={<Login/>} />
-        <Route path="/register" element={<Register/>} />
-        <Route path="/home" element={<HomeLayout/>} />
-        <Route path="/mylist" element={<MyList/>} />
-        <Route path="/series" element={<Series/>} />
-        <Route path="/films" element={<Films/>} />
-      </Routes>
-    </BrowserRouter>
+    <RouterProvider router={router} />
   )
 }
 
