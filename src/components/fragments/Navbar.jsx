@@ -1,7 +1,7 @@
 import { MdKeyboardArrowDown } from "react-icons/md"
 import { Link } from "react-router-dom"
 
-const Navbar = () => {
+const Navbar = ({ genreTab }) => {
   return (
     <>
         <nav className="max-w-screen px-5 py-1.5 md:px-10 md:py-6 bg-pageHeaderBackground flex justify-between">
@@ -19,6 +19,7 @@ const Navbar = () => {
                 <Link to="/series">Series</Link>
                 <Link to="/films">Film</Link>
                 <Link to="/mylist">Daftar Saya</Link>
+                { genreTab }
               </div>
             </div>
             <div className="flex gap-1 md:gap-2 items-center">

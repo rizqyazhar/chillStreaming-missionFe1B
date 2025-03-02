@@ -1,10 +1,10 @@
 import Navbar from "../fragments/Navbar"
 import Footer from "../fragments/Footer"
 
-const HomeLayout = ({ children }) => {
+const HomeLayout = ({ children, genreTab }) => {
   return (
     <>
-        <Navbar />
+        <Navbar genreTab={genreTab} />
           {children}
         <Footer />
     </>

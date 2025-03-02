@@ -5,7 +5,7 @@ import { useState } from "react";
 const Genre = () => {
   const [showGenre, setShowGenre] = useState(false);
   return (
-    <div className="relative flex justify-center items-center gap-2 w-28 h-11 rounded-lg mb-24 bg-paperBackground cursor-pointer" onClick={ (e) => {
+    <div className="hidden md:relative md:flex md:justify-center md:items-center md:gap-2 md:w-28 md:h-11 md:rounded-lg md:mb-24 md:bg-paperBackground cursor-pointer" onClick={ (e) => {
       e.preventDefault();
       setShowGenre(!showGenre)
       

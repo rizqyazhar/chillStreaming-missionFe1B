@@ -4,10 +4,11 @@ import PotraitBoxs from "../components/fragments/PotraitBoxs"
 import Header from "../components/fragments/Header"
 import Genre from "../components/elements/Genres/genre"
 import Main from "../components/fragments/Main"
+import GenreTab from "../components/elements/genres/GenreTab"
 
 const Films = () => {
   return (
-    <HomeLayout>
+    <HomeLayout genreTab={ <GenreTab /> }>
       <Header>
         <Genre />
       </Header>
