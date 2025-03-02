@@ -5,7 +5,7 @@ import { BiSolidHide } from "react-icons/bi"
 
 const RegisterForm = () => {
   return (
-    <AuthLayout title="Daftar" subTitle="Selamat Datang!">
+    <AuthLayout title="Daftar" subTitle="Selamat Datang!" bgSrc="register" >
         <CompleteInput 
             id="username" 
             type="text" 
