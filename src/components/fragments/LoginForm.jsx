@@ -5,7 +5,7 @@ import { BiSolidHide } from "react-icons/bi"
 
 const LoginForm = () => {
   return (
-    <AuthLayout title="Masuk" subTitle="Selamat Datang Kembali!">
+    <AuthLayout title="Masuk" subTitle="Selamat Datang Kembali!" bgSrc="login">
         <CompleteInput 
             id="username" 
             type="text" 
