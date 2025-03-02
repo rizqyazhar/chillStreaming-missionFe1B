@@ -38,7 +38,7 @@ const RegisterForm = () => {
                 <p className="text-light-secondary text-base tracking-[.2px] cursor-default">Sudah punya akun? <a className="text-white text-sm cursor-pointer">Masuk</a></p>
             </div>
         </CompleteInput>
-        <CompleteButtonForm />
+        <CompleteButtonForm pathLink="/home" />
     </AuthLayout>
   )
 }

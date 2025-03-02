@@ -28,7 +28,7 @@ const LoginForm = () => {
                 <p className="text-white text-base cursor-pointer"><a to="">Lupa kata sandi?</a></p>
             </div>
         </CompleteInput>
-        <CompleteButtonForm />
+        <CompleteButtonForm pathLink="/home" />
     </AuthLayout>
   )
 }
