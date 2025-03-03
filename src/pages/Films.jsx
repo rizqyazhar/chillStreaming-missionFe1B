@@ -2,7 +2,7 @@ import HomeLayout from "../components/layouts/HomeLayout"
 import LandscapeBoxs from "../components/fragments/LandscapeBoxs"
 import PotraitBoxs from "../components/fragments/PotraitBoxs"
 import Header from "../components/fragments/Header"
-import Genre from "../components/elements/Genres/genre"
+import Genre from "../components/elements/genres/Genre"
 import Main from "../components/fragments/Main"
 import GenreTab from "../components/elements/genres/GenreTab"
 
