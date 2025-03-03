@@ -16,7 +16,7 @@ const PotraitBoxs = ({ title }) => {
         <div className="absolute right-3 bottom-48 w-11 h-11 hidden md:flex md:justify-center md:items-center rounded-full border border-outlineBorder bg-bodyBackground cursor-pointer">
           <FaArrowRight className="text-lg text-white"/>
         </div>
-        <div className="w-full px-5 md:px-10 grid grid-cols-[repeat(5,minmax(95px,234px))] gap-x-3 md:gap-x-7 overflow-x-auto md:overflow-auto">
+        <div className="w-full px-5 md:px-10 grid grid-cols-[repeat(5,minmax(95px,234px))] gap-x-3 md:gap-x-7 overflow-x-auto md:overflow-visible">
           {potrait.map((l, index) => (
               index < 5 && <PotraitBox key={l.id} src={l.img} />
             ))}
