@@ -1,6 +1,6 @@
 import RegisterForm from "../components/fragments/RegisterForm"
 
-const register = () => {
+const Register = () => {
   return (
     <>
         <RegisterForm />
@@ -8,4 +8,4 @@ const register = () => {
   )
 }
 
-export default register
+export default Register
